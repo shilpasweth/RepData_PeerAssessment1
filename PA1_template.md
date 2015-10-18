@@ -26,6 +26,7 @@ activity2_weekday <- NULL
 mean_activity2_weekday <- NULL
 mean_activity2_weekend <- NULL
 ```
+Hence the data is loaded and initialised with default values.
 
 ## What is mean total number of steps taken per day?
 
@@ -65,6 +66,8 @@ print(c("The median is",median_stepsum))
 ```
 ## [1] "The median is" "10395"
 ```
+The mean is 9354.
+The median is 10395.
 
 ## What is the average daily activity pattern?
 
@@ -89,6 +92,8 @@ mn_int[which.max(mn_int)]
 ##      835 
 ## 206.1698
 ```
+The interval of max number of steps is 835.
+The max number of steps is 206.1698
 
 ## Inputing missing values
 
@@ -197,6 +202,7 @@ summary(activity2)
 ##  Max.   :806.00   2012-10-06:  288   Max.   :2355.0  
 ##                   (Other)   :15840
 ```
+Hence the new dataset doesnt contain anymore NAs.
 
 ## Are there differences in activity patterns between weekdays and weekends?
 Adding weekend/weekday column to table
@@ -244,6 +250,7 @@ xyplot(avg ~ interval | day, data = df_final, layout = c(1, 2),type = "l", ylab 
 
 ![](PA1_template_files/figure-html/unnamed-chunk-16-1.png) 
 
+Hence from the plot it can be seen there is a slight difference.
 
 
 
